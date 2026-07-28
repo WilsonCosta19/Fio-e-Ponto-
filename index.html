@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fio & Ponto — Crochê autoral feito à mão</title>
+  <meta name="description" content="Peças de crochê feitas à mão sob encomenda: moda feminina, masculina, acessórios, decoração e itens personalizados. Faça já sua encomenda pelo WhatsApp." />
+
+  <!-- Fontes: Fraunces (display, com personalidade artesanal) + Karla (texto) + Space Mono (rótulos/preços, remete a "ficha técnica" de ponto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Link de acessibilidade para pular direto ao conteúdo -->
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <!-- ===================== HEADER / NAVEGAÇÃO ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <a href="#topo" class="brand" aria-label="Fio & Ponto — início">
+        <span class="brand-mark" aria-hidden="true">
+          <!-- Ícone: novelo simplificado, feito só com curvas -->
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M8 15c8 4 8 10 16 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M9 24c8-4 10 2 18-1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M20 5c6 5 6 25 0 30" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+          </svg>
+        </span>
+        <span class="brand-name">Fio<span class="brand-amp">&amp;</span>Ponto</span>
+      </a>
+
+      <!-- Botão hambúrguer (some no desktop) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contatos</a></li>
+        </ul>
+        <!-- CTA principal do header: link funcional para WhatsApp -->
+        <a
+          class="btn btn-cta"
+          href="https://wa.me/5531999999999?text=Ol%C3%A1%2C%20Fio%20%26%20Ponto!%20Quero%20fazer%20uma%20encomenda%20de%20croch%C3%AA."
+          target="_blank"
+          rel="noopener"
+        >
+          Faça já sua encomenda
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="topo">
+      <div class="container hero-inner">
+        <p class="eyebrow">ATELIÊ DE CROCHÊ AUTORAL</p>
+        <h1 class="hero-title">
+          Cada peça começa<br />
+          em um nó — e termina<br />
+          em uma <span class="highlight">história.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Roupas, acessórios e itens de decoração em crochê, feitos ponto a ponto
+          e sob encomenda para quem valoriza o que é único.
+        </p>
+        <div class="hero-actions">
+          <a
+            class="btn btn-cta btn-lg"
+            href="https://wa.me/5531999999999?text=Ol%C3%A1%2C%20Fio%20%26%20Ponto!%20Quero%20fazer%20uma%20encomenda%20de%20croch%C3%AA."
+            target="_blank"
+            rel="noopener"
+          >
+            Faça já sua encomenda
+          </a>
+          <a class="btn btn-ghost" href="#servicos">Ver catálogo</a>
+        </div>
+      </div>
+
+      <!-- Linha de "fio" animada, decorativa — representa o traçado de um ponto sendo feito -->
+      <svg class="hero-thread" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+        <path
+          id="threadPath"
+          d="M0,80 C150,20 300,120 450,60 C600,10 750,110 900,50 C1000,15 1100,70 1200,40"
+          fill="none"
+          stroke="var(--color-mustard)"
+          stroke-width="3"
+          stroke-linecap="round"
+        />
+      </svg>
+    </section>
+
+    <!-- Divisor "picô" — remete ao acabamento arrematado do crochê -->
+    <div class="scallop-divider" aria-hidden="true"></div>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section id="sobre" class="section section-sobre" data-reveal>
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">SOBRE O ATELIÊ</p>
+          <h2 class="section-title">Um fio, mil possibilidades</h2>
+          <p>
+            O Fio &amp; Ponto nasceu de uma agulha, um novelo e a vontade de transformar
+            tempo em peças que durem. Trabalhamos com fibras naturais e mistas,
+            escolhidas a dedo para cada projeto, e cada encomenda passa pelas
+            mesmas mãos do início ao acabamento final.
+          </p>
+          <p>
+            Não fazemos produção em série: cada peça é combinada com quem vai
+            usá-la — cor, caimento, tamanho e detalhes — antes da primeira
+            carreira de pontos ser feita.
+          </p>
+
+          <ul class="stat-row" role="list">
+            <li class="stat-chip">
+              <span class="stat-number">8+</span>
+              <span class="stat-label">anos de ofício</span>
+            </li>
+            <li class="stat-chip">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">peças entregues</span>
+            </li>
+            <li class="stat-chip">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">sob encomenda</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-visual" aria-hidden="true">
+          <!-- Motivo decorativo: "granny square" construído só em CSS -->
+          <div class="granny-square">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="scallop-divider" aria-hidden="true"></div>
+
+    <!-- ===================== SERVIÇOS ===================== -->
+    <section id="servicos" class="section section-servicos" data-reveal>
+      <div class="container">
+        <p class="eyebrow">SERVIÇOS</p>
+        <h2 class="section-title">O que sai da nossa agulha</h2>
+        <p class="section-lede">
+          Um catálogo vivo — toque em qualquer peça para conversar diretamente
+          conosco pelo WhatsApp e montar a sua encomenda.
+        </p>
+        <p class="stitch-legend">
+          <span><svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg> ponto corrente</span>
+          <span><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8h10M8 3v10" stroke="currentColor" stroke-width="1.4"/></svg> ponto baixo</span>
+          <span><svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 12V4M12 12V4M4 4h8M4 8h8" stroke="currentColor" stroke-width="1.4" fill="none"/></svg> ponto alto</span>
+        </p>
+
+        <div class="service-grid">
+
+          <!-- Card 1 -->
+          <article class="service-card" data-service="Moda Feminina">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 3c0 1.7 1.3 3 3 3s3-1.3 3-3M6 6l3-3h6l3 3-2 4 1 11H7l1-11-2-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Moda Feminina</h3>
+            <p>Blusas, vestidos, saídas de praia e conjuntos em crochê, com caimento sob medida.</p>
+            <a class="service-link" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Tenho%20interesse%20em%20uma%20pe%C3%A7a%20de%20Moda%20Feminina%20em%20croch%C3%AA." target="_blank" rel="noopener">Pedir pelo WhatsApp →</a>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="service-card" data-service="Moda Masculina">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 8l4-4h8l4 4-3 2v10H7V10L4 8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Moda Masculina</h3>
+            <p>Regatas, ponchos, bonés e cardigãs, com acabamento reforçado para o dia a dia.</p>
+            <a class="service-link" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Tenho%20interesse%20em%20uma%20pe%C3%A7a%20de%20Moda%20Masculina%20em%20croch%C3%AA." target="_blank" rel="noopener">Pedir pelo WhatsApp →</a>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="service-card" data-service="Acessórios">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 9V7a5 5 0 0110 0v2" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="9" width="16" height="11" rx="2" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <h3>Acessórios</h3>
+            <p>Bolsas, carteiras, chaveiros e porta-copos — os detalhes que assinam um look.</p>
+            <a class="service-link" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Tenho%20interesse%20em%20Acess%C3%B3rios%20em%20croch%C3%AA." target="_blank" rel="noopener">Pedir pelo WhatsApp →</a>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="service-card" data-service="Decoração">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="6" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 8l4 3-4 3M20 8l-4 3 4 3" stroke="currentColor" stroke-width="1.2"/></svg>
+            </span>
+            <h3>Decoração</h3>
+            <p>Almofadas, tapetes e arranjos de parede que trazem aconchego para qualquer cômodo.</p>
+            <a class="service-link" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Tenho%20interesse%20em%20pe%C3%A7as%20de%20Decora%C3%A7%C3%A3o%20em%20croch%C3%AA." target="_blank" rel="noopener">Pedir pelo WhatsApp →</a>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="service-card" data-service="Infantil">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 14c0-3 2-5 5-5h2c3 0 5 2 5 5v2c0 2-1 3-3 3H7c-2 0-3-1-3-3v-2Z" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="8" r="1.4" fill="currentColor"/><circle cx="15" cy="8" r="1.4" fill="currentColor"/></svg>
+            </span>
+            <h3>Infantil</h3>
+            <p>Macacões, sapatinhos e amigurumis fofos, em fios macios e seguros para bebês.</p>
+            <a class="service-link" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Tenho%20interesse%20em%20pe%C3%A7as%20Infantis%20em%20croch%C3%AA." target="_blank" rel="noopener">Pedir pelo WhatsApp →</a>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="service-card" data-service="Personalizados">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l2.2 4.6 5.1.7-3.7 3.6.9 5-4.5-2.4-4.5 2.4.9-5-3.7-3.6 5.1-.7L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Personalizados</h3>
+            <p>Peças sob medida e amigurumis exclusivos, criados a partir da sua ideia.</p>
+            <a class="service-link" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Quero%20um%20projeto%20Personalizado%20em%20croch%C3%AA." target="_blank" rel="noopener">Pedir pelo WhatsApp →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DEPOIMENTOS ===================== -->
+    <section id="depoimentos" class="section section-depoimentos dark" data-reveal>
+      <div class="container">
+        <p class="eyebrow eyebrow-light">DEPOIMENTOS</p>
+        <h2 class="section-title section-title-light">Quem já vestiu, conta</h2>
+
+        <div class="testimonial-carousel" id="testimonialCarousel">
+          <div class="testimonial-track" id="testimonialTrack">
+
+            <blockquote class="testimonial-card">
+              <p>“Encomendei um vestido para o verão e o caimento ficou perfeito.
+                Recebi antes do prazo e com um capricho que eu nunca vi em loja.”</p>
+              <footer>— Marina A., Belo Horizonte</footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <p>“Pedi um poncho personalizado para o meu pai e o acabamento
+                impressionou toda a família. Já virei cliente fixa.”</p>
+              <footer>— Renato S., Contagem</footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <p>“As almofadas de crochê renovaram a sala inteira. Atendimento
+                atencioso do início ao fim, direto pelo WhatsApp.”</p>
+              <footer>— Juliana P., Nova Lima</footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <p>“O amigurumi personalizado do meu filho ficou idêntico ao
+                desenho que mandei. Trabalho impecável.”</p>
+              <footer>— Camila F., Betim</footer>
+            </blockquote>
+
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="prevTestimonial" aria-label="Depoimento anterior">‹</button>
+            <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Selecionar depoimento"></div>
+            <button class="carousel-btn" id="nextTestimonial" aria-label="Próximo depoimento">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="scallop-divider flip" aria-hidden="true"></div>
+
+    <!-- ===================== CONTATOS ===================== -->
+    <section id="contato" class="section section-contato" data-reveal>
+      <div class="container contact-grid">
+
+        <div class="contact-info">
+          <p class="eyebrow">CONTATOS</p>
+          <h2 class="section-title">Vamos combinar sua peça</h2>
+          <p>
+            Fale direto com a gente pelo WhatsApp ou preencha o formulário rápido
+            ao lado — nós te respondemos com um orçamento personalizado.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/5531999999999" target="_blank" rel="noopener">(31) 99999-9999</a>
+            </li>
+            <li>
+              <span class="contact-label">E-mail</span>
+              <a href="mailto:contato@fioeponto.com.br">contato@fioeponto.com.br</a>
+            </li>
+            <li>
+              <span class="contact-label">Instagram</span>
+              <a href="https://instagram.com/fioeponto.croche" target="_blank" rel="noopener">@fioeponto.croche</a>
+            </li>
+            <li>
+              <span class="contact-label">Atendimento</span>
+              <span>Segunda a sábado, 9h às 18h</span>
+            </li>
+          </ul>
+
+          <a
+            class="btn btn-cta btn-lg"
+            href="https://wa.me/5531999999999?text=Ol%C3%A1%2C%20Fio%20%26%20Ponto!%20Quero%20fazer%20uma%20encomenda%20de%20croch%C3%AA."
+            target="_blank"
+            rel="noopener"
+          >
+            Faça já sua encomenda
+          </a>
+        </div>
+
+        <!-- Formulário rápido: gera uma mensagem pronta e abre o WhatsApp (sem backend) -->
+        <form class="quick-order" id="quickOrderForm" novalidate>
+          <h3>Pedido rápido</h3>
+
+          <label for="orderName">Seu nome</label>
+          <input type="text" id="orderName" name="orderName" placeholder="Como podemos te chamar?" required />
+
+          <label for="orderPiece">Peça desejada</label>
+          <select id="orderPiece" name="orderPiece" required>
+            <option value="" disabled selected>Escolha uma categoria</option>
+            <option value="Moda Feminina">Moda Feminina</option>
+            <option value="Moda Masculina">Moda Masculina</option>
+            <option value="Acessórios">Acessórios</option>
+            <option value="Decoração">Decoração</option>
+            <option value="Infantil">Infantil</option>
+            <option value="Personalizados">Personalizados</option>
+          </select>
+
+          <label for="orderMessage">Detalhes (cor, tamanho, prazo...)</label>
+          <textarea id="orderMessage" name="orderMessage" rows="3" placeholder="Conte um pouco sobre a peça que você imagina"></textarea>
+
+          <button type="submit" class="btn btn-cta btn-block">Enviar para o WhatsApp</button>
+          <p class="form-hint" id="formHint" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== BOTÃO FLUTUANTE DE WHATSAPP ===================== -->
+  <a
+    href="https://wa.me/5531999999999?text=Ol%C3%A1%2C%20Fio%20%26%20Ponto!%20Quero%20fazer%20uma%20encomenda%20de%20croch%C3%AA."
+    class="whatsapp-float"
+    id="whatsappFloat"
+    target="_blank"
+    rel="noopener"
+    aria-label="Fale conosco no WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+      <path d="M16 3C9.4 3 4 8.4 4 15c0 2.4.7 4.6 1.9 6.5L4 29l7.7-1.8c1.9 1 4 1.6 6.3 1.6 6.6 0 12-5.4 12-12S22.6 3 16 3Zm0 21.8c-2 0-3.9-.5-5.5-1.5l-.4-.2-4.6 1.1 1.1-4.5-.3-.4A9.7 9.7 0 0 1 6.2 15c0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.4 9.8-9.8 9.8Zm5.4-7.3c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.3 5.2 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4-.1-.1-.3-.2-.6-.3Z"/>
+    </svg>
+  </a>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Fio &amp; Ponto — crochê feito ponto a ponto.</p>
+      <nav class="footer-nav" aria-label="Navegação do rodapé">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contatos</a>
+      </nav>
+      <p class="footer-copy">© <span id="currentYear"></span> Fio &amp; Ponto. Desenvolvido por <a href="https://github.com/WilsonCosta19" target="_blank" rel="noopener">Wilson Costa</a>. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
